@@ -1,6 +1,7 @@
 const uuid = require('uuid');
 const path = require('path');
-const {Device, DeviceInfo} = require('../models/models')
+const DeviceInfo = require('../models/deviceInfoModel')
+const Device = require('../models/deviceModel')
 const ApiError = require('../errors/ApiError')
 
 

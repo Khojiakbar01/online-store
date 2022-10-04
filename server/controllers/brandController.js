@@ -1,4 +1,4 @@
-const {Brand} = require('../models/models')
+const Brand = require('../models/brandModel')
 const AppError = require('../errors/ApiError')
 
 
