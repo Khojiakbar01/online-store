@@ -4,7 +4,7 @@ const sequelize = require('./config/database/db')
 const models = require('./models/models')
 const fileUpload = require('express-fileupload')
 const cors = require('cors')
-const router = require('./Routes/index')
+const router = require('./app')
 const errorHandler = require('./middlewares/ErrorHandler')
 const PORT = process.env.PORT || 5000
 const path = require('path');
@@ -15,7 +15,7 @@ app.use(cors())
 app.use(express.json());
 app.use(express.static(path.resolve(__dirname, 'static')))
 app.use(fileUpload({}))
-app.use('/api', router)
+app.use('/api/v1', router)
 
 
 

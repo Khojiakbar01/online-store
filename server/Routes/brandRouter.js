@@ -4,7 +4,7 @@ const brandController = require('../controllers/brandController')
 const router = Router()
 
 router.route('/')
-    .post(brandController.create)
-    .get(brandController.getAll)
+    .post(brandController.createBrand)
+    .get(brandController.getAllBrands)
 
 module.exports = router
